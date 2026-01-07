@@ -141,6 +141,8 @@ export default function Graph({
                   opacity={0.4}
                   style={{
                     animation: "pulse 1.5s ease-in-out infinite",
+                    transformBox: "fill-box",
+                    transformOrigin: "center",
                   }}
                 />
               )}
