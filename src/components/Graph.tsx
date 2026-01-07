@@ -96,6 +96,7 @@ export default function Graph({
         alignItems: "center",
         justifyContent: "center",
         minWidth: 0,
+        margin: 1,
       }}
     >
       <svg
