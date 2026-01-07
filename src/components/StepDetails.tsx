@@ -47,21 +47,6 @@ export default function StepDetails({ step }: StepDetailsProps) {
     );
   }
 
-  const getStepIcon = () => {
-    switch (step.type) {
-      case "init":
-        return "🎬";
-      case "visit":
-        return "👁️";
-      case "relax":
-        return "⚡";
-      case "complete":
-        return "🎉";
-      default:
-        return "📍";
-    }
-  };
-
   const getStepTitle = () => {
     switch (step.type) {
       case "init":
@@ -96,7 +81,6 @@ export default function StepDetails({ step }: StepDetailsProps) {
     >
       <div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ fontSize: 24 }}>{getStepIcon()}</span>
           <h2
             style={{
               margin: 0,
